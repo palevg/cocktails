@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+  --black: #202025;
+  --grapefruit: #FD5103;
+  --gray: #5F6775;
+  --lightgray: #BDBDBD;
+  --white: #F5F5F5;
+  --whitetext: #FCFCFC;
+  --auxorange: #FE7031;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--grapefruit);
+
+  img {
+      position: relative;
+      top: 18px;
+      left: 102px;
+
+      @media (max-width: 480px) {
+          width: 30px;
+          top: 16px;
+          left: 88px;
+      }
+  }
+}
+
+.table-symbols {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: var(--gray);
+
+  td {
+    width: 36px;
+    cursor: pointer;
+
+    &:hover {
+      color: #2a3d59;
+    }
+  }
+}
+
+.ingredients-list {
+  font-family: Poppins;
+  color: var(--gray);
+
+  li {
+    list-style-type: none;
+    line-height: 26px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--grapefruit);
+    }
+  }
+
+  li:before {
+    content: "✶ ";
+    color: var(--black);
+  }
+}
+
+.ingredients-list__dark {
+  font-family: Poppins;
+  color: var(--lightgray);
+
+  li {
+    list-style-type: none;
+    line-height: 26px;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--grapefruit);
+    }
+  }
+
+  li:before {
+    content: "✶ ";
+    color: var(--whitetext);
+  }
+}
+
+.features-list {
+  font-family: Poppins;
+  color: var(--gray);
+  margin-top: 32px;
+
+  li {
+    list-style-type: none;
+    line-height: 28px;
+  }
+
+  li:before {
+    content: "✶ ";
+    color: var(--black);
+  }
+}
+
+.features-list__dark {
+  font-family: Poppins;
+  color: var(--lightgray);
+  margin-top: 32px;
+
+  li {
+    list-style-type: none;
+    line-height: 26px;
+  }
+
+  li:before {
+    content: "✶ ";
+    color: var(--whitetext);
+  }
+}
+
+div.MuiTextField-root {
+  input {
+    color: var(--grapefruit);
+  }
+
+  .MuiOutlinedInput-root {
+    fieldset {
+      border-color: var(--auxorange);
+    }
+
+    &:hover fieldset {
+      border-color: var(--grapefruit);
+    }
+  }
+}
